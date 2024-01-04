@@ -1,5 +1,5 @@
 {*
-* 2007-2014 PrestaShop
+* Copyright since 2007 Carmine Di Gruttola
 *
 * NOTICE OF LICENSE
 *
@@ -17,17 +17,16 @@
 * versions in the future. If you wish to customize PrestaShop for your
 * needs please refer to http://www.prestashop.com for more information.
 *
-*  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2014 PrestaShop SA
-*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
+* @author    cdigruttola <c.digruttola@hotmail.it>
+* @copyright Copyright since 2007 Carmine Di Gruttola
+* @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *}
 
 {extends file='page.tpl'}
 
 {block name="page_content"}
-    <h2>{l s='Unauthorized' d='Modules.Loginascustomer.Main'}</h2>
-    <p class="alert alert-danger">
-        {l s='You are not authorized to use this feature' d='Modules.Loginascustomer.Main'}
-    </p>
+  <h2>{l s='Unauthorized' d='Modules.Loginascustomer.Main'}</h2>
+  <p class="alert alert-danger">
+    {l s='You are not authorized to use this feature' d='Modules.Loginascustomer.Main'}
+  </p>
 {/block}
