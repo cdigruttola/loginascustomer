@@ -70,21 +70,9 @@ class LoginAsCustomer extends Module
             return;
         }
 
-        return '<div class="col-md-3">
-                <div class="card">
-                  <h3 class="card-header">
-                    <i class="material-icons">lock_outline</i>
-                    ' . $this->trans('Login As Customer', [], 'Modules.Loginascustomer.Main') . '
-                  </h3>
-                  <div class="card-body">
-                    <p class="text-muted text-center">
-                        <a href="' . $link . '" target="_blank" style="text-decoration: none;">
-                            <i class="material-icons d-block">lock_outline</i>' . $this->trans('Login As Customer', [], 'Modules.Loginascustomer.Main') . '
-                        </a>
-                    </p>
-                  </div>
-                </div>
-                </div>';
+        $this->smarty->assign(['link' => $link]);
+
+        return $this->fetch('module:loginascustomer/views/templates/hook/displayAdminCustomers.tpl');
     }
 
     public function makeToken($id_customer)
