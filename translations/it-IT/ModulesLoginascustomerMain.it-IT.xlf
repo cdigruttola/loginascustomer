@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin-dev" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d97f0bac6428cc1d248d2de0d932930e">
+        <source>Login As Customer</source>
+        <target>Login come Cliente</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2a0b9c1fad70e3c41b53fd539fbc6887">
+        <source>Allows you login as customer</source>
+        <target>Consente di eseguire il login come cliente</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e06d1ba70f1331e9f9a113cc2f887d3f">
+        <source>Unauthorized</source>
+        <target>Non autorizzato</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="59212173c895a8d89663b5f7c4e529e6">
+        <source>You are not authorized to use this feature</source>
+        <target>Non sei autorizzato ad usare questa funzionalità</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
