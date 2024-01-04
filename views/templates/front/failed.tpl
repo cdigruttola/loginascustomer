@@ -26,8 +26,8 @@
 {extends file='page.tpl'}
 
 {block name="page_content"}
-    <h2>{l s='Unauthorized' mod='loginas'}</h2>
+    <h2>{l s='Unauthorized' d='Modules.Loginascustomer.Main'}</h2>
     <p class="alert alert-danger">
-        {l s='You are not authorized to use this feature' mod='loginas'}
+        {l s='You are not authorized to use this feature' d='Modules.Loginascustomer.Main'}
     </p>
 {/block}

@@ -22,8 +22,6 @@
  * @copyright Copyright since 2007 Carmine Di Gruttola
  * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
-
-
 if (!defined('_PS_VERSION_')) {
     exit;
 }
@@ -37,7 +35,7 @@ class LoginAsCustomer extends Module
     {
         $this->name = 'loginascustomer';
         $this->tab = 'back_office_features';
-        $this->version = '0.7.2';
+        $this->version = '1.0.0';
         $this->author = 'cdigruttola';
         $this->controllers = ['login'];
 
@@ -45,8 +43,13 @@ class LoginAsCustomer extends Module
         parent::__construct();
 
         $this->ps_versions_compliancy = ['min' => '1.7.1.0', 'max' => _PS_VERSION_];
-        $this->displayName = $this->l('Login As Customer');
-        $this->description = $this->l('Allows you login as customer');
+        $this->displayName = $this->trans('Login As Customer', [], 'Modules.Loginascustomer.Main');
+        $this->description = $this->trans('Allows you login as customer', [], 'Modules.Loginascustomer.Main');
+    }
+
+    public function isUsingNewTranslationSystem()
+    {
+        return true;
     }
 
     public function install()
@@ -71,12 +74,12 @@ class LoginAsCustomer extends Module
                 <div class="card">
                   <h3 class="card-header">
                     <i class="material-icons">lock_outline</i>
-                    ' . $this->l('Login As Customer') . '
+                    ' . $this->trans('Login As Customer', [], 'Modules.Loginascustomer.Main') . '
                   </h3>
                   <div class="card-body">
                     <p class="text-muted text-center">
                         <a href="' . $link . '" target="_blank" style="text-decoration: none;">
-                            <i class="material-icons d-block">lock_outline</i>' . $this->l('Login As Customer') . '
+                            <i class="material-icons d-block">lock_outline</i>' . $this->trans('Login As Customer', [], 'Modules.Loginascustomer.Main') . '
                         </a>
                     </p>
                   </div>
